@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "watch": "shadow-cljs watch app;",
-    "release": "shadow-cljs release app;",
+    "build": "shadow-cljs release app;",
     "server": "shadow-cljs server;",
     "clean": "rm -rf target; rm -rf public/js/compiled"
   },
