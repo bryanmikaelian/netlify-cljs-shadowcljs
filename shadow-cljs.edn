@@ -1,0 +1,40 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src"]
+
+ :dependencies [[binaryage/devtools "0.9.7"]
+                [reagent "1.1.1"]
+                [com.teknql/shadow-cljs-tailwind-jit "0.2.2"]]
+
+ :builds
+  {:app {:target :browser
+        :output-dir "public/js/compiled"
+        :asset-path "/js/compiled"
+
+        :modules
+          {:main
+            {:entries [app.core]}}
+
+        :dev
+          {:build-hooks
+            [(teknql.tailwind/start-watch!)]}
+
+        :release
+          {:build-hooks
+            [(teknql.tailwind/compile-release!)]}
+        
+        :devtools
+          {:before-load app.core/stop
+           ;; after live-reloading finishes call this function
+           :after-load app.core/start
+           ;; serve the public directory over http at port 8700
+           :http-root    "public"
+           :http-port    8700
+           :preloads     [devtools.preload]}
+
+
+        :tailwind/output "public/css/compiled/style.css"
+
+        :tailwind/files 
+           {:base-path "."
+            :tailwind.css "./public/css/style.css"}}}}
