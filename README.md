@@ -10,7 +10,7 @@ This a template that lets you deploy a ClojureScript project on Netlify. It is c
 - [PostCSS](https://postcss.org/)
 - [Reagent](https://reagent-project.github.io/)
 
-You can find an example of this working at https://pedantic-goldstine-29c9ce.netlify.app/
+You can find an example of this working at https://cljs-demo.netlify.app
 
 # Commands
 
