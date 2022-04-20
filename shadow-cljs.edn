@@ -30,8 +30,11 @@
         :tailwind/output "public/css/compiled/style.css"
         :tailwind/files 
            {:base-path "."
-            :tailwind.css "./public/css/style.css"}}}
+            :tailwind.css "./public/css/style.css"}}
 
   :functions {:target :node-library
               :output-to "functions/api.js"
-              :exports {:handler functions.core/handler}}}
+              :exports {:handler functions.core/handler}
+              :js-options {:js-provider :shadow
+                           :keep-native-requires true
+                           :devtools {:enabled false}}}}}
