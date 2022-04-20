@@ -5,7 +5,7 @@
     "watch": "shadow-cljs watch app functions;",
     "build": "shadow-cljs release app functions;",
     "server": "shadow-cljs server;",
-    "clean": "rm -rf target; rm -rf public/js/compiled; rm -rf functions"
+    "clean": "rm -rf target; rm -rf public/js/compiled; rm -rf functions/*.js"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",

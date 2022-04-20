@@ -16,4 +16,3 @@ pom.xml.asc
 node_modules
 .shadow-cljs
 .lsp
-functions
