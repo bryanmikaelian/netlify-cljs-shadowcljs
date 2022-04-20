@@ -2,6 +2,8 @@
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/bryanmikaelian/netlify-cljs)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/aa02abed-1ee3-4aff-81fd-ab2565b52d1f/deploy-status)](https://app.netlify.com/sites/netlify-cljs-ci/deploys)
+
 This a template that lets you deploy a ClojureScript project on Netlify. It is currently using the following:
 
 - [ClojureScript 1.14.x](https://clojurescript.org/)
