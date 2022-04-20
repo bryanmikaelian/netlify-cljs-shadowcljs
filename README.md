@@ -12,7 +12,16 @@ This a template that lets you deploy a ClojureScript project on Netlify. It is c
 - [PostCSS](https://postcss.org/)
 - [Reagent](https://reagent-project.github.io/)
 
-You can find an example of this working at https://cljs-demo.netlify.app
+
+The template automatically sets up the following features:
+
+- A basic Front End
+- A Netlify Function
+
+You can remove some of these features based on your use case.
+
+
+A demo of this repo is also available at https://cljs-demo.netlify.app
 
 # Commands
 
@@ -59,5 +68,10 @@ Runs a shadow-cljs server that hosts your app. Does not watch for changes. You c
 yarn release
 ```
 
-# Examples using this template
-- https://bob-ross-colors.netlify.app/
+### REPL
+
+Spins up a shadow-cljs browser REPL
+
+``` shell
+yarn repl
+```
