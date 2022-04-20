@@ -13,10 +13,10 @@ This a template that lets you deploy a ClojureScript project on Netlify. It is c
 - [Reagent](https://reagent-project.github.io/)
 
 
-The template automatically sets up the following features:
+The template automatically sets up the following features that Netlify Offers:
 
-- A basic Front End
-- A Netlify Function
+- A basic Front End deployed as a Netlify Site
+- A Netlify Function (see [docs](https://docs.netlify.com/functions/overview/) to learn more)
 
 You can remove some of these features based on your use case.
 
