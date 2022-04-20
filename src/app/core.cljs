@@ -2,9 +2,11 @@
   (:require [reagent.dom :as rdom]
             [lambdaisland.fetch :as fetch]))
 
+(def function-url (str (. js/window -location) ".netlify/functions/api"))
+
 (defn- invoke-function
   []
-  (-> (fetch/post "http://localhost:8888/.netlify/functions/api")
+  (-> (fetch/post function-url)
       (.then (fn [resp]
                (js/console.log resp)))))
 
