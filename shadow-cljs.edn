@@ -2,9 +2,11 @@
 {:source-paths
  ["src"]
 
- :dependencies [[binaryage/devtools "0.9.7"]
+ :dependencies [[org.clojure/core.async "1.5.648"]
+                [binaryage/devtools "0.9.7"]
                 [reagent "1.1.1"]
-                [com.teknql/shadow-cljs-tailwind-jit "0.2.2"]]
+                [com.teknql/shadow-cljs-tailwind-jit "0.2.2"]
+                [lambdaisland/fetch "1.0.41"]]
 
  :builds
   {:app {:target :browser
@@ -21,9 +23,7 @@
             [(teknql.tailwind/compile-release!)]}
         :devtools
           {:before-load app.core/stop
-           ;; after live-reloading finishes call this function
            :after-load app.core/start
-           ;; serve the public directory over http at port 8700
            :http-root    "public"
            :http-port    8700
            :preloads     [devtools.preload]}
@@ -35,6 +35,6 @@
   :functions {:target :node-library
               :output-to "functions/api.js"
               :exports {:handler functions.core/handler}
-              :js-options {:js-provider :shadow
+              :js-options {
                            :keep-native-requires true
                            :devtools {:enabled false}}}}}
