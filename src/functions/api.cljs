@@ -1,4 +1,4 @@
-(ns functions.core)
+(ns functions.api)
 
 (defn handler
   [_event _context callback]

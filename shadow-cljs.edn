@@ -34,7 +34,7 @@
 
   :functions {:target :node-library
               :output-to "functions/api.js"
-              :exports {:handler functions.core/handler}
+              :exports {:handler functions.api/handler}
               :js-options {
                            :keep-native-requires true
                            :devtools {:enabled false}}}}}
