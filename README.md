@@ -18,9 +18,18 @@ You can find an example of this working at https://cljs-demo.netlify.app
 
 When developing locally, these commands can help you out:
 
+### Server
+
+Use the netlify-cli to spin up a dev environment. You can visit your site
+at http://localhost:8888. Useful when you want to debug Netlify Functions.
+
+``` shell
+yarn server
+```
+
 ### Watch
 
-Watch and recompile your site as you make changes. You can visit your site at http://localhost:8700.
+Watch and recompile your site as you make changes. You can visit your site at http://localhost:8700. If you use this in tandem with `yarn server`, you can use port 8888 for everything.
 
 ``` shell
 yarn watch
