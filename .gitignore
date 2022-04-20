@@ -17,3 +17,5 @@ node_modules
 .shadow-cljs
 .lsp
 
+# Local Netlify folder
+.netlify
