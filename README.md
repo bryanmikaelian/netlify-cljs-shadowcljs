@@ -23,6 +23,10 @@ You can remove some of these features based on your use case.
 
 A demo of this repo is also available at https://cljs-demo.netlify.app
 
+## Interested in using `figwheel-main`?
+
+Checkout https://github.com/bryanmikaelian/netlify-cljs-figwheel
+
 # Commands
 
 When developing locally, these commands can help you out:
